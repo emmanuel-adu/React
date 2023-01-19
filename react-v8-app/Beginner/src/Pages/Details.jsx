@@ -1,19 +1,20 @@
-import { useState, useContext } from "react";
+import {  lazy,useState, useContext } from "react";
 import { useParams, Link, useNavigate } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 import AdoptedPetContext from "../Utility/AdoptedPetContext";
 import ErrorBoundary from "../Error/ErrorBoundary";
 import Carousel from "../Components/Carousel";
 import fetchPet from "../Utility/fetchPet";
-import Modal from "../Components/Modal";
 
+const Modal = lazy(() => import('../Components/Modal'))
+//TODO: add tailwind here
 const Details = () => {
   const { id } = useParams(); // UseParams gets the id from the browserRouter (this is required to use this hook)
   const navigate = useNavigate(); // lets you navigate to another page instead of user clicking a botton
-  
+
   // eslint-disable-next-line no-unused-vars
   const [_, setAdoptedPet] = useContext(AdoptedPetContext); // Writing to Adopted Pet Context
-  const [ showModal, setShowModal ] = useState(false);
+  const [showModal, setShowModal] = useState(false);
   const results = useQuery(["details", id], fetchPet); // Using react Query instead of useEffect will keep a cache
 
   if (results.isLoading) {
