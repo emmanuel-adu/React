@@ -272,3 +272,5 @@ Catch of react
 ## React Lifecycle:
 
 <img width="856" alt="image" src="https://user-images.githubusercontent.com/32419781/218898909-3b8c4cd1-105d-4936-864d-cb560ee1af25.png">
+<img width="552" alt="image" src="https://user-images.githubusercontent.com/32419781/218900837-f98dd3f5-1cc6-4bdd-96f7-4311788ff913.png">
+
