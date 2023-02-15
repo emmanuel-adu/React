@@ -268,3 +268,7 @@ Catch of react
 
 *React Context* lets us create global states
 - use this sparing 
+
+## React Lifecycle:
+
+<img width="856" alt="image" src="https://user-images.githubusercontent.com/32419781/218898909-3b8c4cd1-105d-4936-864d-cb560ee1af25.png">
